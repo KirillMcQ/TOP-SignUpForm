@@ -18,9 +18,28 @@ body {
     background-size: cover;
     flex: 1;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-overlay {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    display: flex;
+    font-family: 'Agdasima', 'sans-serif';
+    font-size: 30px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    bottom: 100px;
+}
+
+.logo-overlay img {
+    width: 100px;
 }
 
 .signUp-section {
-    border: 10px solid green;
-    flex: 2;
+    flex: 1.5;
 }
