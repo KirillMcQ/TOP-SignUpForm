@@ -1,3 +1,26 @@
 /* Agdasima 700px Font for the 'logo' section */
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
 
+body {
+    margin: 0;
+}
+
+.all-container {
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+/* Image Section Styles */
+.img-section {
+    background-image: url("./backround-img.jpg");
+    background-size: cover;
+    flex: 1;
+    margin: 0;
+}
+
+.signUp-section {
+    border: 10px solid green;
+    flex: 2;
+}
