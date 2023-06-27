@@ -32,19 +32,20 @@
 
             <div class="form">
                 <h1>Let's Do This!</h1>
-                <div class="inputs-container">
+                <p>Items marked with (*) are required</p>
+                <form action="/index.html" id="inputs-container" method="post">
                     <div class="left-inputs">
                         <div>
                             <label for="first_name">First Name</label>
                             <input type="text" name="first_name" id="first_name">
                         </div>
                         <div>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div>
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <label for="password">Password*</label>
+                            <input type="password" name="password" id="password" required>
                         </div>
                     </div>
                     <div class="right-inputs">
@@ -57,15 +58,18 @@
                             <input type="tel" name="phone_number" id="phone_number">
                         </div>
                         <div>
-                            <label for="confirm_password">Confirm Password</label>
-                            <input type="password" name="confirm_password" id="confirm_password">
+                            <label for="confirm_password">Confirm Password*</label>
+                            <input type="password" name="confirm_password" id="confirm_password" required>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
 
             <div class="signUp">
-                <h1>This is the sign up div.</h1>
+                <div class="signUpSubmit-container">
+                    <button type="submit" form="inputs-container">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
             </div>
 
         </div>
